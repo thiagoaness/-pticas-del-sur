@@ -1,1 +1,0 @@
-# -pticas-del-sur
