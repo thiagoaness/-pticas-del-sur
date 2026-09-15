@@ -674,8 +674,8 @@ const BRANDS = [
   {name:"Dolce & Gabbana", img:"dolce-gabbana-1.svg"},
   {name:"Vulk", img:"vulk-seeklogo.png"},
   {name:"Paula Cahen d'Anvers", img:"paula-cahen-d-anvers-seeklogo.png"},
-  {name:"Rouge", img:"Rouge.png"},
-  {name:"Polaris", img:"Polaris.png"},
+  {name:"Rouge", img:"Rouge.png", big : true},
+  {name:"Polaris", img:"Polaris.png", big : true},
   {name:"Mormaii", img:"mormaii-seeklogo.png"},
   {name:"Rusty", img:"rusty.svg"}
 ];
@@ -698,6 +698,7 @@ function renderInsCard(ins, tier) {
 }
 
 function renderBrandCard(b) {
+  const sz = b.big ? ' style="width:150px;height:88px"' : '';
   return `<div class="b-card"><div class="b-logo">${imgTag(b.img, b.name)}</div><div class="b-name">${b.name}</div></div>`;
 }
 
